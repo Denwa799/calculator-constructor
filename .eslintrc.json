@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "es2022": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:react/recommended",
+        "airbnb",
+        "airbnb-typescript",
+        "@feature-sliced",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "settings": {
+        "react": {
+          "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+              "paths": ["src"],
+              "extensions": [".js", ".ts", ".d.ts", ".jsx", ".tsx"]
+            },
+            "typescript": {
+                "alwaysTryTypes": true
+              }
+          }
+    },
+    "rules": {
+        "react-hooks/exhaustive-deps": "off",
+        "react/react-in-jsx-scope": "off",
+        "import/prefer-default-export": "off",
+        "react/function-component-definition": "off"
+    }
+}
