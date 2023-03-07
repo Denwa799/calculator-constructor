@@ -1,9 +1,9 @@
-import { AppButton } from 'shared/ui';
+import { AppButton, AppContainer } from 'shared/ui';
 
 export const MainPage = () => {
   return (
-    <div>
+    <AppContainer isVerticalCenter isHorizontalCenter isFullHeight>
       <AppButton title="1" onClick={() => {}} />
-    </div>
+    </AppContainer>
   );
 };
