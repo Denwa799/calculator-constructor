@@ -1,9 +1,17 @@
-import { AppButton, AppContainer } from 'shared/ui';
+import { AppOperationButtons } from 'entities/operationButtons';
+import { AppContainer } from 'shared/ui';
+import styles from './styles.module.scss';
 
 export const MainPage = () => {
   return (
-    <AppContainer isVerticalCenter isHorizontalCenter isFullHeight>
-      <AppButton title="1" onClick={() => {}} />
+    <AppContainer
+      styleClass={styles.container}
+      isVerticalCenter
+      isHorizontalCenter
+      isFullHeight
+    >
+      <AppOperationButtons styleClass={styles.marginBottom} />
+      <AppOperationButtons />
     </AppContainer>
   );
 };

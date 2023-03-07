@@ -9,10 +9,13 @@ export const AppButton: FC<IAppButton> = ({
   type,
   onClick,
 }) => {
-  const buttonClass = cn(styles.AppButton, {
-    [styles.primary]: type === 'primary',
-    styleClass,
-  });
+  const buttonClass = cn(
+    styles.AppButton,
+    {
+      [styles.primary]: type === 'primary',
+    },
+    styleClass
+  );
 
   return (
     <button className={buttonClass} type="button" onClick={onClick}>
