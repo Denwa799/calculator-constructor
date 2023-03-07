@@ -1,3 +1,21 @@
 :root {
-    --color-primary: #5D5FEF;
+    --color-primary: #5d5fef;
+    --color-secondary: #111827;
+
+    --color-text: #000;
+    --color-text-accent: #fff;
+    --color-text-2: #6b7280;
+    --color-text-3: #4d5562;
+
+    --color-background: #f3f4f6;
+    --color-border: #e2e3e5;
+    --color-border-2: #c4c4c4;
+
+    --box-shadow-primary: 0px 2px 4px 0px rgba(0, 0, 0, 0.06), 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+
+    --radius: 6px;
+
+    --transition: 0.3s;
+
+    --font-size-primary: 14px;
 }

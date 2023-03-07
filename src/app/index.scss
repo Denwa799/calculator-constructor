@@ -1,5 +1,6 @@
 @import "./styles/index.scss";
 
-body {
-    color: var(--color-primary);
+* {
+    font-size: var(--font-size-primary);
+    color: var(--color-text);
 }
