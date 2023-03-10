@@ -1,10 +1,14 @@
+import cn from 'classnames';
 import { FC } from 'react';
 import { AppCard, AppButton } from 'shared/ui';
 import styles from './styles.module.scss';
+import { IAppNumericBlock } from './types';
 
-export const AppNumericBlock: FC = () => {
+export const AppNumericBlock: FC<IAppNumericBlock> = ({ styleClass }) => {
+  const cardClass = cn(styles.card, styleClass);
+
   return (
-    <AppCard styleClass={styles.card}>
+    <AppCard styleClass={cardClass}>
       <div className={styles.row}>
         <AppButton
           styleClass={styles.buttonMargin}
