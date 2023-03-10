@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import { AppButton } from 'shared/ui';
-import { AppCard } from 'shared/ui/AppCard';
+import { AppCard, AppButton } from 'shared/ui';
 import styles from './styles.module.scss';
 import { IAppOperationButtons } from './types';
 

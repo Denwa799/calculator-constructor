@@ -1,3 +1,4 @@
+import { AppNumericBlock } from 'entities/numericBlock';
 import { AppOperationButtons } from 'entities/operationButtons';
 import { AppContainer } from 'shared/ui';
 import styles from './styles.module.scss';
@@ -11,7 +12,7 @@ export const MainPage = () => {
       isFullHeight
     >
       <AppOperationButtons styleClass={styles.marginBottom} />
-      <AppOperationButtons />
+      <AppNumericBlock />
     </AppContainer>
   );
 };

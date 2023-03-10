@@ -1,0 +1,48 @@
+$min-width: 72px;
+$margin: 8px;
+
+.card {
+    width: 100%;
+    max-width: 240px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: $margin;
+}
+
+.button,
+.buttonMargin {
+    width: 100%;
+    min-width: $min-width;
+}
+
+.buttonMargin {
+    margin-right: $margin;
+}
+
+.footer {
+    display: flex;
+
+    .buttonFooter {
+        flex: 1;
+        min-width: $min-width;
+    }
+}
+
+@media (max-width: 270px) {
+    .row {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .button,
+    .buttonMargin {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
