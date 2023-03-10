@@ -1,3 +1,25 @@
-.marginRight {
-    margin-right: 8px;
+@import "shared/config/vars/vars.scss";
+
+$margin: 8px;
+
+.card {
+    display: flex;
+    width: 100%;
+    max-width: 240px;
+}
+
+.button {
+    flex: 1;
+    margin-right: $margin;
+}
+
+@media (max-width: $size-extra-small) {
+    .card {
+        flex-direction: column;
+    }
+
+    .button {
+        margin-right: 0;
+        margin-bottom: $margin;
+    }
 }
