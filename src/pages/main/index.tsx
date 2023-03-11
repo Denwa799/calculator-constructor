@@ -1,4 +1,4 @@
-import { AppCalculatorComponents } from 'features/calculatorComponents';
+import { AppCalculatorComponents } from 'features/calculator-components';
 import { AppContainer } from 'shared/ui';
 import styles from './styles.module.scss';
 

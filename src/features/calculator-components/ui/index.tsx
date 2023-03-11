@@ -1,5 +1,5 @@
-import { AppNumericBlock } from 'entities/numericBlock';
-import { AppOperationButtons } from 'entities/operationButtons';
+import { AppNumericBlock } from 'entities/numeric-block';
+import { AppOperationButtons } from 'entities/operation-buttons';
 import { AppCalculatorDisplay } from 'shared/ui';
 import { AppSumButton } from 'shared/ui/AppSumButton';
 import styles from './styles.module.scss';
