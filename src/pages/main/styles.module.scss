@@ -4,15 +4,6 @@
     flex-direction: column;
 }
 
-.itemsContainer {
-    width: 100%;
-    max-width: 240px;
-}
-
-.marginBottom {
-    margin-bottom: 12px;
-}
-
 @media (max-width: $size-extra-small) {
     .container {
         height: auto;

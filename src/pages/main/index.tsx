@@ -1,6 +1,5 @@
-import { AppNumericBlock } from 'entities/numericBlock';
-import { AppOperationButtons } from 'entities/operationButtons';
-import { AppCalculatorDisplay, AppContainer } from 'shared/ui';
+import { AppCalculatorComponents } from 'features/calculatorComponents';
+import { AppContainer } from 'shared/ui';
 import styles from './styles.module.scss';
 
 export const MainPage = () => {
@@ -11,11 +10,7 @@ export const MainPage = () => {
       isHorizontalCenter
       isFullHeight
     >
-      <div className={styles.itemsContainer}>
-        <AppCalculatorDisplay containerClass={styles.marginBottom} />
-        <AppOperationButtons styleClass={styles.marginBottom} />
-        <AppNumericBlock />
-      </div>
+      <AppCalculatorComponents />
     </AppContainer>
   );
 };
