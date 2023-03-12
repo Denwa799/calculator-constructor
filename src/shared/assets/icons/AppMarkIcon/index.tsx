@@ -1,0 +1,27 @@
+import { FC } from 'react';
+import { THEME } from 'shared/config';
+import { IAppMarkIcon } from './types';
+
+export const AppMarkIcon: FC<IAppMarkIcon> = ({
+  width = 14,
+  height = 10,
+  color = THEME.colorText,
+}) => {
+  return (
+    <svg
+      width={`${width}`}
+      height={`${height}`}
+      viewBox={`0 0 ${width} ${height}`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.5 8.33334L1.16666 5.00001L4.5 1.66668M9.5 1.66668L12.8333 5.00001L9.5 8.33334"
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};

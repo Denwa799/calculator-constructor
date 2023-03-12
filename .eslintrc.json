@@ -49,6 +49,17 @@
         "react-hooks/exhaustive-deps": "off",
         "react/react-in-jsx-scope": "off",
         "import/prefer-default-export": "off",
-        "react/function-component-definition": "off"
+        "react/function-component-definition": "off",
+        "jsx-a11y/label-has-associated-control": ["error", {
+            "required": {
+              "some": ["nesting", "id"]
+            }
+          }],
+        "jsx-a11y/label-has-for": ["error", {
+            "required": {
+              "some": ["nesting", "id"]
+            }
+          }],
+        "import/no-cycle": "off"
     }
 }
